@@ -1,29 +1,24 @@
-*NOTE TO STUDENTS:  This is a template for your **proposal**.  Items wrapped inside `{}` should be replaced accordingly.*
-
-*Your updated proposal document (this file) is due on Monday, November 2, at 5:00pm.*
-
-**Please delete this line, and the comments above.**
-
 --- 
 
-# {Provide a Project Title Here}
+# {Maze Runner}
 
 Team Members:
-- {Member 1 Name}, {Member 1 email}
-- {Member 2 Name}, {Member 2 email}
+- {Ruthvik Balakrishna Jois}, {ruthvikj@buffalo.edu}
+- {Balaji Shubham Kandhi}, {bkandhi@buffalo.edu}
 
 --- 
 
 ## Project Objective
-{What are you proposing to do?}
+{The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots will be fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it will contain collision avoidance. The robots will be controlled by 2 different operators that will start the race at the same time and the one to get across first will be the winner.
+[Maze.jpeg](https://drive.google.com/file/d/1gpX-vfYERUfnZOQ7RMVxCLrq_NMaKKzL/view?usp=sharing) }
 
 
 ## Contributions
-{What is new/unique/interesting about this project?}
+{This project will be really interesting game in which the 2 robots' user will compete each other using their voice command to get across the line first. The voice controlled robots with collison avoidance programmed in them and the obstacle being kinetic will make for a really good visual representation.}
 
 
 ## Project Plan
-{How will we do it?  What resources will we use (e.g., specific online materials, specific chapters from the textbook, etc.)?}
+{While controlling the robot should turn 90 degrees right or left according to the controller's wish. By using the blathering library of the python software, we give the voice commands to the robots. The maze will be be designed using the world maker, excel or a 2D CAD software (like AutoCAD or Solidworks). The race course will also contain moving obstacles which the operators have to look out for while controlling their respectiver robots. The robot can be set in gazebo, stage ROS or rviz simulator for a great 2D or 3D view.  This will be create a great gaming experience for the users.}
 
 
 ## Milestones/Schedule Checklist
