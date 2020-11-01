@@ -1,5 +1,3 @@
---- 
-
 # {Maze Runner}
 
 Team Members:
@@ -10,7 +8,7 @@ Team Members:
 
 ## Project Objective
 {The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots will be fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it will contain collision avoidance. The robots will be controlled by 2 different operators that will start the race at the same time and the one to get across first will be the winner.
-[Maze.jpeg](https://drive.google.com/file/d/1gpX-vfYERUfnZOQ7RMVxCLrq_NMaKKzL/view?usp=sharing) }
+[Maze.jpeg](https://drive.google.com/file/d/1gpX-vfYERUfnZOQ7RMVxCLrq_NMaKKzL/view?usp=sharing) 
 
 
 ## Contributions
