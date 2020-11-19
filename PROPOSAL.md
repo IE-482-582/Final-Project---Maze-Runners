@@ -22,7 +22,7 @@ While controlling the robot should turn 90 degrees right or left according to th
 ## Milestones/Schedule Checklist
 - [x] Complete this proposal document.  *Due Nov. 2*
 - [ ] Create a maze using excel or CAD software. *BSK Due Nov. 13*
-- [ ] Add a second robot in the maze. *RBJ Due Nov. 27*
+- [ ] Add a second robot in the maze. *RBJ Due Nov. 13*
 - [ ] Build a teleopbot robot with collision avoidance. *RBJ Due Nov. 20*
 - [ ] Create progress report.  *Due Nov. 20*
 - [ ] Add voice command to the robots and simulate it. *RBJ BSK Due Dec. 2*
