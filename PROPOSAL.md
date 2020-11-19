@@ -32,8 +32,8 @@ While controlling the robot should turn 90 degrees right or left according to th
 
 
 ## Measures of Success
-- [ ] View maze world in simulator.
-- [ ] Whether the two robots are moving simultaneously.
-- [ ] Whether the two robots are following collision avoidance or not.
+- [x] View maze world in simulator.
+- [x] Whether the two robots are moving simultaneously.
+- [x] Whether the two robots are following collision avoidance or not.
 - [ ] Whether the robots are following the voice commands or not.
 - [ ] Have a classmate follow the steps in the README to successfully run the simulation without any help.
