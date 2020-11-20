@@ -60,4 +60,4 @@ Grades for the final project will be based on the following percentages and cont
 	- Are the installation instructions complete?
 	- Are the instructions for running the code complete?
 	- Were you able to answer technical questions about your project?
-	- How well were you able to demonstrate the actual implementation?  Note: You have until Friday, Dec. 13 to finalize the project.
+	- How well were you able to demonstrate the actual implementation?  Note: You have until Monday, Dec. 14 to finalize the project.
