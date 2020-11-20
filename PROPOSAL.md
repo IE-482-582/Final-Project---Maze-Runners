@@ -23,8 +23,8 @@ While controlling the robot should turn 90 degrees right or left according to th
 - [x] Complete this proposal document.  *Due Nov. 2*
 - [x] Create a maze using excel or CAD software. *BSK Due Nov. 13*
 - [x] Add a second robot in the maze. *RBJ Due Nov. 13*
-- [x] Build a teleopbot robot with collision avoidance. *RBJ Due Nov. 20*
 - [x] Create progress report.  *Due Nov. 20*
+- [ ] Build a teleopbot robot with collision avoidance. *RBJ Due Nov. 27*
 - [ ] Add voice command to the robots and simulate it. *RBJ BSK Due Dec. 2*
 - [ ] Create final presentation.  *Due Dec. 4*
 - [ ] Update documentation based on presentation feedback. *RBJ, BSK Dec. 7*
@@ -33,7 +33,8 @@ While controlling the robot should turn 90 degrees right or left according to th
 
 ## Measures of Success
 - [x] View maze world in simulator.
-- [x] Whether the two robots are moving simultaneously.
-- [x] Whether the two robots are following collision avoidance or not.
+- [x] Whether the two robots are moving.
+- [ ] Whether the two robots are controlled simulatneously.
+- [ ] Whether the two robots are following collision avoidance or not.
 - [ ] Whether the robots are following the voice commands or not.
 - [ ] Have a classmate follow the steps in the README to successfully run the simulation without any help.
