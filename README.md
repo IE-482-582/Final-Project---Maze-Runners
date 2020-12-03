@@ -4,6 +4,29 @@
 - Please see [PROPOSAL.md](PROPOSAL.md) for a template for your **proposal** (Due Nov. 2).
 
 --- 
+# Creating the Multi-robot Worlds/Mazes for Gazebo
+## Setup the Multi_Robot
+
+- Grab the current github repo
+
+```
+cd ~/Downloads
+rm -rf maze_runner
+git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/
+```
+
+- Run the installation script
+```
+cd ~/Downloads/maze_runner/multi_robot
+chmod +x install_multi_robot.sh
+./install_multi_robot.sh
+
+```
+This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
+
+
+
+
 
 ## IMPORTANT DATES:
 - **Friday, Oct. 30, 11:30am** -- Proposal presentations in class.
