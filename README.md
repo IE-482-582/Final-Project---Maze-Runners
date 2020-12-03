@@ -24,9 +24,41 @@ chmod +x install_multi_robot.sh
 ```
 This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
 
+# Creating a Multi-robot World
+These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
+NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.
 
+-  Make a backup copy of these files, just in case something goes wrong:
+```
+cd ~/catkin_ws/src/multirobot/launch
+cp custom_world_coords.xls custom_world_coords_BACKUP.xls
+cp custom_world_coords.csv custom_world_coords_BACKUP.csv
+cp custom_world.world custom_world_BACKUP.world
+```
 
+-  Edit the ``` custom_world_coords.xls ``` file in Libre Office Calc.
+
+-  Save as ``` custom_world_coords.csv ``` (export as ```.csv``` file):
+
+	- File --> Save As...
+  	- Choose file type = "Text CSC (.csv)"
+	- Name the file ```custom_world_coords.csv```
+	- Save
+	
+-  Run the python script to generate a .world file:
+
+```
+cd ~/catkin_ws/src/multi_robot/launch
+python create_world.py
+```
+This will create a file named ```custom_world.world.```
+
+- Test out your new world:
+```
+cd ~/catkin_ws/src/multi_robot/launch
+roslaunch multi_robot main.launch
+```
 
 ## IMPORTANT DATES:
 - **Friday, Oct. 30, 11:30am** -- Proposal presentations in class.
