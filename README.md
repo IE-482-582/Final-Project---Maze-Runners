@@ -12,7 +12,7 @@
 ```
 cd ~/Downloads
 rm -rf Final-Project---Maze-Runner
-git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/
+git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
 ```
 
 - Run the installation script
@@ -58,6 +58,33 @@ This will create a file named ```custom_world.world.```
 ```
 cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
+```
+# Adding Voice commands to the turtlebots by using Photospinx
+
+- First install photosphinx:
+```
+sudo apt-get install ros-indigo-pocketsphinx
+sudo apt-get install gstreamer0.10-gconf
+```
+## Setup the Multi_Robot
+
+- Grab the current github repo
+
+```
+cd ~/Downloads
+rm -rf Final-Project---Maze-Runner
+git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
+```
+
+- Run the installation script
+```
+cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes
+chmod +x *.py
+```
+- Compile/make our package
+```
+cd ~/catkin_ws
+catkin_make
 ```
 
 ## IMPORTANT DATES:
