@@ -27,6 +27,8 @@ This will create a new package named multi_robot in your ~/catkin_ws/src/ direct
 ## Creating a Multi-robot World
 These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
+https://drive.google.com/file/d/1UGo7wGABH8IfnUXu776eiEHLr4fnbnS6/view?usp=sharing
+
 NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.
 
 -  Make a backup copy of these files, just in case something goes wrong:
