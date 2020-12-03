@@ -24,7 +24,7 @@ chmod +x install_multi_robot.sh
 ```
 This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
 
-# Creating a Multi-robot World
+## Creating a Multi-robot World
 These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
 NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.
