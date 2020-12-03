@@ -17,7 +17,7 @@ git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
 
 - Run the installation script
 ```
-cd ~/Downloads/maze_runner/multi_robot
+cd ~/Downloads/Final-Project---Maze-Runner/multi_robot
 chmod +x install_multi_robot.sh
 ./install_multi_robot.sh
 
