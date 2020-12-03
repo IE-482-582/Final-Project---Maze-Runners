@@ -11,7 +11,7 @@
 
 ```
 cd ~/Downloads
-rm -rf maze_runner
+rm -rf Final-Project---Maze-Runner
 git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/
 ```
 
