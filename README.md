@@ -136,7 +136,7 @@ roslaunch rbx1_speech voice_nav_commands.launch
 cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 rosrun rbx1_speech voice_nav.py
 ```
-*NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.
+*NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.*
 
 - Open a Gazebo to check whether your robots are implementing the voice commands are not. For that open a 3rd terminal window.
 
