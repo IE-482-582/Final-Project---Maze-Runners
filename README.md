@@ -62,9 +62,9 @@ This will create a file named ```custom_world.world.```
 cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
-# Adding Voice commands to the turtlebots by using Photospinx
+## Adding Voice commands to the turtlebots by using Pocketsphinx
 
-- First install photosphinx:
+- First install pocketsphinx package:
 ```
 sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
