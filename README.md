@@ -9,7 +9,7 @@
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
 ### Setup the Multi_Robot
 
-- Grab the current github repo. Open a new terminal window.
+- Grab the current github repo and download it. Open a new terminal window.
 
 ```
 cd ~/Downloads
@@ -17,14 +17,17 @@ rm -rf Final-Project---Maze-Runner
 git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
 ```
 
-- Run the installation script
 ```
-cd ~/Downloads/Final-Project---Maze-Runner/multi_robot
-chmod +x install_multi_robot.sh
-./install_multi_robot.sh
+cd ~/catkin_ws/src/
+catkin_create_pkg multi_robot rospy geometry_msgs sensor_msgs
+```
+
+- Copy all the files in multi_robot from Downloads to catkin_ws/src/multi_robot
 
 ```
-- This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
+cd ~/catkin_ws/
+catkin_make
+```
 
 ## Creating a Customized Maze
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
@@ -66,6 +69,7 @@ This will create a file named ```custom_world.world.```
 cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
+*NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
 ## Adding Voice commands to the turtlebots by using Pocketsphinx
 
 - First install pocketsphinx package. Open a new terminal window.
@@ -75,7 +79,7 @@ sudo apt-get install gstreamer0.10-gconf
 ```
 ## Setting up the Voice Commands
 
-- Grab the current github repo
+- Grab the current github repo and download it. Open a new terminal window.
 
 ```
 cd ~/Downloads
@@ -83,9 +87,16 @@ rm -rf Final-Project---Maze-Runner
 git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
 ```
 
+```
+cd ~/catkin_ws/src/
+catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
+```
+
+- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
+
 - Run the installation script. 
 ```
-cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes
+cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 chmod +x *.py
 ```
 - Compile/make our package
@@ -101,27 +112,25 @@ catkin_make
 cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
 roslaunch rbx1_speech voice_nav_commands.launch
 ```
-*NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone.*
+*NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone. You need to use USB mic for best results.*
+
+-
 
 ## Running the Voice Command.
 
-- For launching the voice command, open a 3rd terminal window.
+- For launching the voice command, open a 2nd terminal window.
 
 ```
 cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 rosrun rbx1_speech voice_nav.py
 ```
+- Open a Gazebo to check whether your robots are implementing the voice commands are not. For that open a 3rd terminal window.
 
-
-
-## IMPORTANT DATES:
-- **Friday, Oct. 30, 11:30am** -- Proposal presentations in class.
-- **Monday, Nov. 2, 5:00pm** -- Be sure your repo has your final [PROPOSAL.md](PROPOSAL.md) uploaded.  This will be modified according to the feedback you received on Oct. 30 in class.
-- **Friday, Nov. 20** -- Progress Report.  Each team will present the status of their project in class that day.
-- **Friday, Dec. 4** -- Your **almost** final documentation, code, and presentation materials are due.  You'll be asked to give a brief presentation in class.  I'll give you feedback.
-- **Exact Date to-be-determined** -- **Final** project presentations.  We'll either do these in class, or you'll produce a YouTube video.  We'll discuss in early December.
-- **Monday, Dec. 14, Noon** -- Your complete project materials are due.
-
+```
+cd ~/catkin_ws/src/multi_robot/launch/
+roslaunch multi_robot main.launch
+```
+*NOTE: We are now using a customized .launch file.*
 
 ---
 
@@ -148,12 +157,6 @@ code/projectname/
 
 
 ---
-
-## References
-- https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
-- https://edu.gaitech.hk/turtlebot/speech-doc.html : For using the photosphinx for voice recognition
-- https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
-- http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
 
 ## Project Grading
 
