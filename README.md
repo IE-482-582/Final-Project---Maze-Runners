@@ -3,8 +3,11 @@
 # Maze Runner
 ---
 #### Project Names - multi_robot & rbx1
-#### Ruthvik Balakrishna Jois (50314910)
-#### Balaji Shubham Kandhi (50314942)
+---
+#### Team Members
+- Ruthvik Balakrishna Jois (50314910)
+- Balaji Shubham Kandhi (50314942)
+
 ---
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
 ### Setup the Multi_Robot.......................(1)
