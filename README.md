@@ -3,8 +3,9 @@
 - This repo is where you will store **all** of your documents for the course project.
 - Please see [PROPOSAL.md](PROPOSAL.md) for a template for your **proposal** (Due Nov. 2).
 
---- 
-# Creating the Multi-robot Worlds/Mazes for Gazebo
+---
+# Maze Runner
+## Creating the Multi-robot Worlds/Mazes for Gazebo
 ## Setup the Multi_Robot
 
 - Grab the current github repo
