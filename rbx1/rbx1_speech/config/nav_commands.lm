@@ -1,0 +1,81 @@
+Language model created by QuickLM on Thu Dec  3 19:53:40 EST 2020
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 15 sentences and 16 words
+
+\data\
+ngram 1=16
+ngram 2=28
+ngram 3=14
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.9542 BACKWARD -0.2218
+-1.9542 FASTER -0.2218
+-1.9542 FORWARD -0.2218
+-1.9542 LEFT -0.2218
+-1.9542 MAX -0.2218
+-1.9542 ONE -0.2218
+-1.9542 RIGHT -0.2218
+-1.9542 ROBOT -0.2218
+-1.9542 SAM -0.2218
+-1.9542 SPEED -0.2218
+-1.6532 STOP -0.2218
+-1.9542 STRAIGHT -0.2218
+-1.9542 TWO -0.2218
+-1.9542 UP -0.2218
+
+\2-grams:
+-1.4771 <s> BACKWARD 0.0000
+-1.4771 <s> FASTER 0.0000
+-1.4771 <s> FORWARD 0.0000
+-1.4771 <s> LEFT 0.0000
+-1.4771 <s> MAX 0.0000
+-1.4771 <s> ONE 0.0000
+-1.4771 <s> RIGHT 0.0000
+-1.4771 <s> ROBOT 0.0000
+-1.4771 <s> SAM 0.0000
+-1.4771 <s> SPEED 0.0000
+-1.1761 <s> STOP 0.0000
+-1.4771 <s> STRAIGHT 0.0000
+-1.4771 <s> TWO 0.0000
+-1.4771 <s> UP 0.0000
+-0.3010 BACKWARD </s> -0.3010
+-0.3010 FASTER </s> -0.3010
+-0.3010 FORWARD </s> -0.3010
+-0.3010 LEFT </s> -0.3010
+-0.3010 MAX </s> -0.3010
+-0.3010 ONE </s> -0.3010
+-0.3010 RIGHT </s> -0.3010
+-0.3010 ROBOT </s> -0.3010
+-0.3010 SAM </s> -0.3010
+-0.3010 SPEED </s> -0.3010
+-0.3010 STOP </s> -0.3010
+-0.3010 STRAIGHT </s> -0.3010
+-0.3010 TWO </s> -0.3010
+-0.3010 UP </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BACKWARD </s>
+-0.3010 <s> FASTER </s>
+-0.3010 <s> FORWARD </s>
+-0.3010 <s> LEFT </s>
+-0.3010 <s> MAX </s>
+-0.3010 <s> ONE </s>
+-0.3010 <s> RIGHT </s>
+-0.3010 <s> ROBOT </s>
+-0.3010 <s> SAM </s>
+-0.3010 <s> SPEED </s>
+-0.3010 <s> STOP </s>
+-0.3010 <s> STRAIGHT </s>
+-0.3010 <s> TWO </s>
+-0.3010 <s> UP </s>
+
+\end\
