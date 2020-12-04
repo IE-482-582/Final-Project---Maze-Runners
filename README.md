@@ -26,7 +26,7 @@ catkin_make
 ```
 ---
 ## Creating a Customized Maze
----
+
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
 - Below link is our gazebo world used in this project.
@@ -69,15 +69,17 @@ roslaunch multi_robot main.launch
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
 ---
 ## Adding Voice commands to the turtlebots by using Pocketsphinx................(2)
----
+
 
 - First install pocketsphinx package. Open a new terminal window.
 ```
 sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
 ```
-## Setting up the Voice Commands................(3)
+
 ---
+## Setting up the Voice Commands................(3)
+
 
 - Grab the current github repo and download it. Open a new terminal window.
 
@@ -104,8 +106,9 @@ chmod +x *.py
 cd ~/catkin_ws
 catkin_make
 ```
-## Running the Voice Recognizer.
 ---
+## Running the Voice Recognizer.
+
 
 - For launching the speech recognizer, open a new terminal window.
 
@@ -115,10 +118,8 @@ roslaunch rbx1_speech voice_nav_commands.launch
 ```
 *NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone. You need to use USB mic for best results.*
 
--
-
-## Running the Voice Command.
 ---
+## Running the Voice Command.
 
 - For launching the voice command, open a 2nd terminal window.
 
