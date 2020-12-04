@@ -7,7 +7,7 @@
 ---
 # Maze Runner
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
-### Setup the Multi_Robot
+### Setup the Multi_Robot.......................(1)
 
 - Grab the current github repo and download it. Open a new terminal window.
 
@@ -70,14 +70,14 @@ cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
-## Adding Voice commands to the turtlebots by using Pocketsphinx
+## Adding Voice commands to the turtlebots by using Pocketsphinx................(2)
 
 - First install pocketsphinx package. Open a new terminal window.
 ```
 sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
 ```
-## Setting up the Voice Commands
+## Setting up the Voice Commands................(3)
 
 - Grab the current github repo and download it. Open a new terminal window.
 
@@ -124,6 +124,8 @@ roslaunch rbx1_speech voice_nav_commands.launch
 cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 rosrun rbx1_speech voice_nav.py
 ```
+*NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.
+
 - Open a Gazebo to check whether your robots are implementing the voice commands are not. For that open a 3rd terminal window.
 
 ```
@@ -159,7 +161,7 @@ code/projectname/
 ---
 ## References
 1. https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
-2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using the photosphinx for pocketsphinx recognition
+2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using text-to-speech recognition
 3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
 4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
 
