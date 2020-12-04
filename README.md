@@ -1,3 +1,4 @@
+
 # Final Project
 
 - This repo is where you will store **all** of your documents for the course project.
@@ -8,7 +9,7 @@
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
 ### Setup the Multi_Robot
 
-- Grab the current github repo
+- Grab the current github repo. Open a new terminal window.
 
 ```
 cd ~/Downloads
@@ -23,14 +24,14 @@ chmod +x install_multi_robot.sh
 ./install_multi_robot.sh
 
 ```
-This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
+- This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
 
 ## Creating a Customized Maze
-These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
+- These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
-https://drive.google.com/file/d/1UGo7wGABH8IfnUXu776eiEHLr4fnbnS6/view?usp=sharing
+**https://drive.google.com/file/d/1UGo7wGABH8IfnUXu776eiEHLr4fnbnS6/view?usp=sharing**
 
-NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.
+*NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.*
 
 -  Make a backup copy of these files, just in case something goes wrong:
 ```
@@ -50,21 +51,23 @@ cp custom_world.world custom_world_BACKUP.world
 	- Save
 	
 -  Run the python script to generate a .world file:
-
+- Open a new terminal role.
 ```
 cd ~/catkin_ws/src/multi_robot/launch
 python create_world.py
 ```
 This will create a file named ```custom_world.world.```
 
-- Test out your new world:
+#### Test out your new world:
+- Open a terminal window.
+
 ```
 cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
 ## Adding Voice commands to the turtlebots by using Pocketsphinx
 
-- First install pocketsphinx package:
+- First install pocketsphinx package. Open a new terminal window.
 ```
 sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
@@ -79,7 +82,7 @@ rm -rf Final-Project---Maze-Runner
 git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
 ```
 
-- Run the installation script
+- Run the installation script. 
 ```
 cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes
 chmod +x *.py
@@ -89,7 +92,24 @@ chmod +x *.py
 cd ~/catkin_ws
 catkin_make
 ```
+## Running the Voice Recognizer.
 
+- For launching the speech recognizer, open a new terminal window.
+
+```
+cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
+roslaunch rbx1_speech voice_nav_commands.launch
+```
+*Note- This will launch the speech recognizer where you could test the vocabulary and your system's microphone.*
+
+## Running the Voice Command.
+
+- For launching the voice command, open a 3rd terminal window.
+
+```
+cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
+rosrun rbx1_speech voice_nav.py
+```
 
 
 
