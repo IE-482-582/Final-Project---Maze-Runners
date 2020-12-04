@@ -29,6 +29,7 @@ chmod +x install_multi_robot.sh
 ## Creating a Customized Maze
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
+- Below link is our gazebo world used in this project.
 **https://drive.google.com/file/d/1UGo7wGABH8IfnUXu776eiEHLr4fnbnS6/view?usp=sharing**
 
 *NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.*
@@ -100,7 +101,7 @@ catkin_make
 cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
 roslaunch rbx1_speech voice_nav_commands.launch
 ```
-*Note- This will launch the speech recognizer where you could test the vocabulary and your system's microphone.*
+*NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone.*
 
 ## Running the Voice Command.
 
