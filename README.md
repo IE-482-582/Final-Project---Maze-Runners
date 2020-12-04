@@ -159,7 +159,7 @@ code/projectname/
 ---
 ## References
 1. https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
-2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using the photosphinx for voice recognition
+2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using the photosphinx for pocketsphinx recognition
 3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
 4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
 
