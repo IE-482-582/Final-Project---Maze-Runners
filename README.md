@@ -1,13 +1,9 @@
 
-# Final Project
 
-- This repo is where you will store **all** of your documents for the course project.
-- Please see [PROPOSAL.md](PROPOSAL.md) for a template for your **proposal** (Due Nov. 2).
-
----
 # Maze Runner
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
 ### Setup the Multi_Robot.......................(1)
+---
 
 - Grab the current github repo and download it. Open a new terminal window.
 
@@ -28,8 +24,9 @@ catkin_create_pkg multi_robot rospy geometry_msgs sensor_msgs
 cd ~/catkin_ws/
 catkin_make
 ```
-
+---
 ## Creating a Customized Maze
+---
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
 - Below link is our gazebo world used in this project.
@@ -70,7 +67,9 @@ cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
+---
 ## Adding Voice commands to the turtlebots by using Pocketsphinx................(2)
+---
 
 - First install pocketsphinx package. Open a new terminal window.
 ```
@@ -78,6 +77,7 @@ sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
 ```
 ## Setting up the Voice Commands................(3)
+---
 
 - Grab the current github repo and download it. Open a new terminal window.
 
@@ -105,6 +105,7 @@ cd ~/catkin_ws
 catkin_make
 ```
 ## Running the Voice Recognizer.
+---
 
 - For launching the speech recognizer, open a new terminal window.
 
@@ -117,6 +118,7 @@ roslaunch rbx1_speech voice_nav_commands.launch
 -
 
 ## Running the Voice Command.
+---
 
 - For launching the voice command, open a 2nd terminal window.
 
@@ -131,10 +133,19 @@ rosrun rbx1_speech voice_nav.py
 ```
 cd ~/catkin_ws/src/multi_robot/launch/
 roslaunch multi_robot main.launch
+
 ```
 *NOTE: We are now using a customized .launch file.*
 
 ---
+## References
+1. https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
+2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using text-to-speech recognition
+3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
+4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
+---
+
+
 
 ## Organizing your Repository
 For consistency, please use the directory structure described below, where `projectname` should be replaced with the actual catkin_ws name of your project.
@@ -156,15 +167,6 @@ code/projectname/
 - `code/projectname/` is a directory for your ROS code.  Replace `projectname` with the name of your catkin package.
 	- Within this directory you should have `CMakeLists.txt`, `package.xml`, a `scripts/` directory, most likely a `msg/` directory, and possibly a `srv/` directory (if your project uses services).  
 - See `06_Followbot` for an example of the directory structure.
-
-
----
-## References
-1. https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
-2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using text-to-speech recognition
-3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
-4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
-
 
 ## Project Grading
 
