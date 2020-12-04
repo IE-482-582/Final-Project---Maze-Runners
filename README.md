@@ -67,6 +67,7 @@ cd ~/catkin_ws/src/multi_robot/launch
 roslaunch multi_robot main.launch
 ```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
+
 ---
 ## Adding Voice commands to the turtlebots by using Pocketsphinx................(2)
 
