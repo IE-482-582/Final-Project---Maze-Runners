@@ -6,7 +6,7 @@
 ---
 # Maze Runner
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
-## Setup the Multi_Robot
+### Setup the Multi_Robot
 
 - Grab the current github repo
 
@@ -25,7 +25,7 @@ chmod +x install_multi_robot.sh
 ```
 This will create a new package named multi_robot in your ~/catkin_ws/src/ directory.
 
-## Creating a Multi-robot World
+## Creating a Customized Maze
 These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
 https://drive.google.com/file/d/1UGo7wGABH8IfnUXu776eiEHLr4fnbnS6/view?usp=sharing
@@ -89,6 +89,9 @@ chmod +x *.py
 cd ~/catkin_ws
 catkin_make
 ```
+
+## Setting up the Voice Commands
+
 
 ## IMPORTANT DATES:
 - **Friday, Oct. 30, 11:30am** -- Proposal presentations in class.
