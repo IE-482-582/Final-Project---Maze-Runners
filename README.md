@@ -69,7 +69,7 @@ roslaunch multi_robot main.launch
 sudo apt-get install ros-indigo-pocketsphinx
 sudo apt-get install gstreamer0.10-gconf
 ```
-## Setup the Multi_Robot
+## Setting up the Voice Commands
 
 - Grab the current github repo
 
@@ -90,7 +90,7 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-## Setting up the Voice Commands
+
 
 
 ## IMPORTANT DATES:
