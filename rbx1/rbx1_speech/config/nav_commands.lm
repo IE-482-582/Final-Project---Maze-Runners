@@ -1,0 +1,113 @@
+Language model created by QuickLM on Sun Dec 13 01:20:17 EST 2020
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 23 sentences and 24 words
+
+\data\
+ngram 1=24
+ngram 2=44
+ngram 3=22
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.1399 BACKWARD -0.2218
+-2.1399 BEHIND -0.2218
+-2.1399 CONTINUE -0.2218
+-2.1399 FASTER -0.2218
+-2.1399 FORWARD -0.2218
+-2.1399 HALT -0.2218
+-2.1399 KILL -0.2218
+-2.1399 L -0.2218
+-2.1399 LEFT -0.2218
+-2.1399 MAX -0.2218
+-2.1399 ONE -0.2218
+-2.1399 PAUSE -0.2218
+-2.1399 R -0.2218
+-2.1399 RIGHT -0.2218
+-2.1399 ROBOT -0.2218
+-2.1399 SAM -0.2218
+-2.1399 SPEECH -0.2218
+-2.1399 SPEED -0.2218
+-1.8388 STOP -0.2218
+-2.1399 STRAIGHT -0.2218
+-2.1399 TWO -0.2218
+-2.1399 UP -0.2218
+
+\2-grams:
+-1.6628 <s> BACKWARD 0.0000
+-1.6628 <s> BEHIND 0.0000
+-1.6628 <s> CONTINUE 0.0000
+-1.6628 <s> FASTER 0.0000
+-1.6628 <s> FORWARD 0.0000
+-1.6628 <s> HALT 0.0000
+-1.6628 <s> KILL 0.0000
+-1.6628 <s> L 0.0000
+-1.6628 <s> LEFT 0.0000
+-1.6628 <s> MAX 0.0000
+-1.6628 <s> ONE 0.0000
+-1.6628 <s> PAUSE 0.0000
+-1.6628 <s> R 0.0000
+-1.6628 <s> RIGHT 0.0000
+-1.6628 <s> ROBOT 0.0000
+-1.6628 <s> SAM 0.0000
+-1.6628 <s> SPEECH 0.0000
+-1.6628 <s> SPEED 0.0000
+-1.3617 <s> STOP 0.0000
+-1.6628 <s> STRAIGHT 0.0000
+-1.6628 <s> TWO 0.0000
+-1.6628 <s> UP 0.0000
+-0.3010 BACKWARD </s> -0.3010
+-0.3010 BEHIND </s> -0.3010
+-0.3010 CONTINUE </s> -0.3010
+-0.3010 FASTER </s> -0.3010
+-0.3010 FORWARD </s> -0.3010
+-0.3010 HALT </s> -0.3010
+-0.3010 KILL </s> -0.3010
+-0.3010 L </s> -0.3010
+-0.3010 LEFT </s> -0.3010
+-0.3010 MAX </s> -0.3010
+-0.3010 ONE </s> -0.3010
+-0.3010 PAUSE </s> -0.3010
+-0.3010 R </s> -0.3010
+-0.3010 RIGHT </s> -0.3010
+-0.3010 ROBOT </s> -0.3010
+-0.3010 SAM </s> -0.3010
+-0.3010 SPEECH </s> -0.3010
+-0.3010 SPEED </s> -0.3010
+-0.3010 STOP </s> -0.3010
+-0.3010 STRAIGHT </s> -0.3010
+-0.3010 TWO </s> -0.3010
+-0.3010 UP </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BACKWARD </s>
+-0.3010 <s> BEHIND </s>
+-0.3010 <s> CONTINUE </s>
+-0.3010 <s> FASTER </s>
+-0.3010 <s> FORWARD </s>
+-0.3010 <s> HALT </s>
+-0.3010 <s> KILL </s>
+-0.3010 <s> L </s>
+-0.3010 <s> LEFT </s>
+-0.3010 <s> MAX </s>
+-0.3010 <s> ONE </s>
+-0.3010 <s> PAUSE </s>
+-0.3010 <s> R </s>
+-0.3010 <s> RIGHT </s>
+-0.3010 <s> ROBOT </s>
+-0.3010 <s> SAM </s>
+-0.3010 <s> SPEECH </s>
+-0.3010 <s> SPEED </s>
+-0.3010 <s> STOP </s>
+-0.3010 <s> STRAIGHT </s>
+-0.3010 <s> TWO </s>
+-0.3010 <s> UP </s>
+
+\end\
