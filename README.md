@@ -180,10 +180,10 @@ rosrun rqt_graph rqt_graph
 
 ---
 
-## Measure of Success
+## Measures of Success
 
 
-| Measure of Success (from your PROPOSAL) | Status (completion percentage) |
+| Measures of Success (from our PROPOSAL) | Status (completion percentage) |
 |:---------------------------------------------------------|:----------------------------------------- |
 | View maze world in simulator| 100%|
 | Whether the two robots are moving.| 100%|
