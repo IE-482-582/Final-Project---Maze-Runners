@@ -9,7 +9,7 @@
 - Balaji Shubham Kandhi (50314942)
 
 ## Project Objective
-The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+The maze runners project consists of 2 robot which passes through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
 
 ---
 ## Creating the Multi-robot Worlds & giving voice command for Gazebo
@@ -20,8 +20,8 @@ The maze runner project consists of 2 robot which passes through a maze using th
 
 ```
   cd ~/Downloads
-  rm -rf Final-Project---Maze-Runner
-  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
+  rm -rf Final-Project---Maze-Runners
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runners/rbx1
 ```
 
 ```
