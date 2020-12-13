@@ -1,15 +1,15 @@
 
 
-# Maze Runner
+# Maze Runners
 ---
-#### Project Names - multi_robot & rbx1
+#### Project Names - rbx1
 ---
 #### Team Members
 - Ruthvik Balakrishna Jois (50314910)
 - Balaji Shubham Kandhi (50314942)
 
 ## Project Objective
-The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots will be fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it will contain collision avoidance. The robots will be controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
 
 ---
 ## Creating the Multi-robot Worlds & giving voice command for Gazebo
@@ -29,7 +29,7 @@ The maze runner project consists of 2 robot which passes through a maze using th
   catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
 ```
 
-- Copy all the files in multi_robot from Downloads to catkin_ws/src/multi_robot
+- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1
 
 ```
   cd ~/catkin_ws/
@@ -69,11 +69,11 @@ The maze runner project consists of 2 robot which passes through a maze using th
 
 ![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
 
-*NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.*
+*NOTE: The files mentioned below are contained in ~/catkin_ws/src/robot_world/launch.*
 
 -  Make a backup copy of these files, just in case something goes wrong:
 ```
-  cd ~/catkin_ws/src/rbx1/multirobot/launch
+  cd ~/catkin_ws/src/rbx1/robot_world/launch
   cp custom_world_coords.xls custom_world_coords_BACKUP.xls
   cp custom_world_coords.csv custom_world_coords_BACKUP.csv
   cp custom_world.world custom_world_BACKUP.world
@@ -91,7 +91,7 @@ The maze runner project consists of 2 robot which passes through a maze using th
 -  Run the python script to generate a .world file:
 - Open a new terminal role.
 ```
-  cd ~/catkin_ws/src/rbx1/multi_robot/launch
+  cd ~/catkin_ws/src/rbx1/robot_world/launch
   python create_world.py
 ```
 This will create a file named ```custom_world.world.```
@@ -100,10 +100,10 @@ This will create a file named ```custom_world.world.```
 - Open a terminal window.
 
 ```
-  cd ~/catkin_ws/src/rbx1/multi_robot/launch
-  roslaunch multi_robot main.launch
+  cd ~/catkin_ws/src/rbx1/robot_world/launch
+  roslaunch robot_world main.launch
 ```
-*NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
+*NOTE - Crosscheck whether in main.launch file custom_world.world is properly mentioned there or not.*
 
 ---
 
@@ -121,7 +121,7 @@ This will create a file named ```custom_world.world.```
 ---
 ## Running the Voice Command.
 
-- Open a new terminal window. For launching the voice command.
+- Open a 2nd terminal window. For launching the voice command.
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
@@ -132,8 +132,8 @@ This will create a file named ```custom_world.world.```
 - Open a new terminal window. Open a Gazebo to check whether your robots are implementing the voice commands are not. 
 
 ```
-  cd ~/catkin_ws/src/rbx1/multi_robot/launch/
-  roslaunch multi_robot main.launch
+  cd ~/catkin_ws/src/rbx1/robot_world/launch/
+  roslaunch robot_world main.launch
 
 ```
 *NOTE: We are now using a customized .launch file.*
