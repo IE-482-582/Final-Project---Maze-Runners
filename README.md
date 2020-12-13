@@ -42,7 +42,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 
 ---
 ## Installation Instructions
-## Creating the Multi-robot Worlds & giving voice command for Gazebo
+## Creating the multi-robot worlds & giving voice command for Gazebo
 ### Setup the rbx1
 ---
 
