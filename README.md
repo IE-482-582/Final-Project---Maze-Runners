@@ -149,6 +149,21 @@ This will create a file named ```custom_world.world.```
 *NOTE: We are now using a customized .launch file.*
 
 ---
+
+## Measure Of Success
+---
+
+| Measure of Success (from your PROPOSAL) | Status (completion percentage) |
+|:---------------------------------------------------------|:----------------------------------------- |
+| View maze world in simulator| 100%|
+| Whether the two robots are moving.| 100%|
+|Whether the two robots are controlled simulatneously.|100%|
+| Whether the two robots are following collision avoidance or not. | 100%|
+| Whether the robots are following the voice commands or not. | 100%|
+| Have a classmate follow the steps in the README to successfully run the simulation without any help.| 100% |
+
+---
+
 ## References
 1. https://www.theconstructsim.com/ros-qa-130-how-to-launch-multiple-robots-in-gazebo-simulator/: For launching multi robots in the world.
 2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using text-to-speech recognition
