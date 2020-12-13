@@ -37,6 +37,7 @@
 
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
 
+![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
 
 *NOTE: The files mentioned below are contained in ~/catkin_ws/src/multi_robot/launch.*
 
