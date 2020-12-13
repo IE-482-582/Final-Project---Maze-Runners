@@ -10,8 +10,15 @@
 
 ## Project Description
 The maze runners project consists of 2 robots whose objective is to pass through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
-*NOTE (1) - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
-*NOTE (2) - You need your hardware for this project which is your Microphone Device. USB Mic is highly preferred but wired headphones with AUX jack will give decent results.*
+- *NOTE (1) - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
+- *NOTE (2) - You need your hardware for this project which is your Microphone Device. USB Mic is highly preferred but wired headphones with AUX jack will give decent results.*
+
+---
+#### Practical Applications
+ - The project can be used for warehousing in industries where a operator can control multiple robots using voice and ask robots to do activities.
+ - If the networking of the project can be done, then by creating Master and Slave nodes multiple players can play a game of Maze Runners. They can control their own robots and see which one reaches the final point first.
+ - This can also be used in maps and navigation where a robot can give information to the operator like the distance all around it and the user can explore the area remotely. 
+ 
 
 ## Gazebo World and Multiple Robots in the World
 Our custom world(or maze) is created using the custom_world.world file which is mentioned in our main.launch file which is the main launch file that we use to start the gazebo. In the file there are two supplementary files mentioned robots.launch and one_launch.launch. These two provide necessary arguments to the robot and to our python code. They are basically the hardware of the project. In the code you can edit the initial pose and experiment with various orientation of the robots. Also, using the custom_world_coords.csv file you can edit the Gazebo world as instructed below. Below is the maze that we are using in the project.
@@ -19,17 +26,17 @@ Our custom world(or maze) is created using the custom_world.world file which is 
  ![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
 
 ## Voice-to-text speech recognizer 
-The rbx1_speech file contains a voice_nav_commands.launch file that opens a voice recognizer. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronunciation need to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary, you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
+The rbx1_speech file contains a voice_nav_commands.launch file that opens a voice recognizer. It uses Pocketsphinx's recognizer.py and gives us voice-to-speech. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronunciation needs to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary, you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
 
  ![Terminal](https://user-images.githubusercontent.com/70620113/102007602-94be7d80-3cf8-11eb-8176-8bd8328df8d2.png)
 
 ## Python Code
-The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below. It also gives the distance between obstacle and itself. To make it easy for user we have named our two robots sam and max,(Sam is Robot 1 and Max is Robot 2) as the names are easy to pronounce and the robots can easily differentiate between the commands.
+The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below. It also gives the distance between obstacle and itself. To make it easy for user we have named our two robots Sam and Max,(Sam is Robot 1 and Max is Robot 2) as the names are easy to pronounce and the robots can easily differentiate between the commands.
 
  ![voice commands](https://user-images.githubusercontent.com/70620113/102007570-4e691e80-3cf8-11eb-9bc3-70bc607ad0eb.png)
 
 #### RQT_Graph
-ALso, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project.
+Also, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project.
 
  ![rqt_graph](https://user-images.githubusercontent.com/70620113/102007535-eca8b480-3cf7-11eb-8e74-2b75c8509b69.png)
 
@@ -40,7 +47,7 @@ ALso, below is the rqt_graph that will help you understand various topics, nodes
 ### Setup the rbx1
 ---
 
-- Grab the current github repo and download it. Open a new terminal window.
+- Open a new terminal window. Grab the current GitHub repo and download it. 
 
 ```
   cd ~/Downloads
@@ -61,14 +68,15 @@ ALso, below is the rqt_graph that will help you understand various topics, nodes
 ```
 
 ---
-## Adding Voice commands to the turtlebots by using Pocketsphinx
+## Adding Voice commands to the Turtlebots by using Pocketsphinx
 
 
-- Open a new terminal window. First install pocketsphinx package. 
+- Open a new terminal window. First install Pocketsphinx package. 
 ```
   sudo apt-get install ros-indigo-pocketsphinx
   sudo apt-get install gstreamer0.10-gconf
 ```
+*NOTE - This will install the recognizer.py file which is vital for this project. This file distinguishes between words and noise.* 
 
 ---
 ## Setting up the Voice Commands
@@ -169,11 +177,11 @@ This will create a file named ```custom_world.world.```
 cd ~/catkin_ws/
 rosrun rqt_graph rqt_graph
 ```
-*NOTE - You can compare your rqt_graph with the rqt_graph attched above to see whether it is working correctly or not.*
+*NOTE - You can compare your rqt_graph with the rqt_graph attached above to see whether it is working correctly or not.*
 
 ---
 
-## Measure Of Success
+## Measure of Success
 
 
 | Measure of Success (from your PROPOSAL) | Status (completion percentage) |
@@ -192,7 +200,7 @@ rosrun rqt_graph rqt_graph
 2. https://edu.gaitech.hk/turtlebot/speech-doc.html : For using text-to-speech recognition
 3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
 4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
-5. https://www.theconstructsim.com/exploring-ros-2-wheeled-robot-part-5/ : For giving the collision avoidance.
+5. https://www.theconstructsim.com/exploring-ros-2-wheeled-robot-part-5/ : For giving the collision avoidance and obstacle detection.
 ---
 
 
