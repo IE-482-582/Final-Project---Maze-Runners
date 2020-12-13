@@ -25,7 +25,7 @@ The logic in the Python code is very basic and easy to understand. It will recei
 #### RQT_Graph
 ALso, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project.
 
-
+![rqt_graph](https://user-images.githubusercontent.com/70620113/102007535-eca8b480-3cf7-11eb-8e74-2b75c8509b69.png)
 
 
 ---
