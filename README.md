@@ -10,7 +10,8 @@
 
 ## Project Description
 The maze runners project consists of 2 robots whose objective is to pass through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
-*NOTE - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
+*NOTE (1) - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
+*NOTE (2) - You need your hardware for this project which is your Microphone Device. USB Mic is highly preferred but wired headphones with AUX jack will give decent results.*
 
 ## Gazebo World and Multiple Robots in the World
 Our custom world(or maze) is created using the custom_world.world file which is mentioned in our main.launch file which is the main launch file that we use to start the gazebo. In the file there are two supplementary files mentioned robots.launch and one_launch.launch. These two provide necessary arguments to the robot and to our python code. They are basically the hardware of the project. In the code you can edit the initial pose and experiment with various orientation of the robots. Also, using the custom_world_coords.csv file you can edit the Gazebo world as instructed below. Below is the maze that we are using in the project.
@@ -150,7 +151,7 @@ This will create a file named ```custom_world.world.```
 ```
 *NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.*
 
-- Open a new terminal window. Open a Gazebo to check whether your robots are implementing the voice commands are not. 
+- Open a 3rd terminal window. Open a Gazebo to check whether your robots are implementing the voice commands are not. 
 
 ```
   cd ~/catkin_ws/src/rbx1/robot_world/launch/
@@ -160,9 +161,20 @@ This will create a file named ```custom_world.world.```
 *NOTE: We are now using a customized .launch file.*
 
 ---
+## Running a rqt_graph
+
+- Open a 4th terminal window. This will allow you to check whether your nodes are actually publishing and subscribing to topics.
+
+```
+cd ~/catkin_ws/
+rosrun rqt_graph rqt_graph
+```
+*NOTE - You can compare your rqt_graph with the rqt_graph attched above to see whether it is working correctly or not.*
+
+---
 
 ## Measure Of Success
----
+
 
 | Measure of Success (from your PROPOSAL) | Status (completion percentage) |
 |:---------------------------------------------------------|:----------------------------------------- |
