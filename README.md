@@ -132,7 +132,7 @@ This will create a file named ```custom_world.world.```
 - Open a new terminal window. Open a Gazebo to check whether your robots are implementing the voice commands are not. 
 
 ```
-  cd ~/catkin_ws/src/multi_robot/launch/
+  cd ~/catkin_ws/src/rbx1/multi_robot/launch/
   roslaunch multi_robot main.launch
 
 ```
