@@ -8,6 +8,9 @@
 - Ruthvik Balakrishna Jois (50314910)
 - Balaji Shubham Kandhi (50314942)
 
+## Project Objective
+The maze runner project consists of 2 robot which passes through a maze using the voice commands. The robots will be fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it will contain collision avoidance. The robots will be controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+
 ---
 ## Creating the Multi-robot Worlds/Mazes for Gazebo
 ### Setup the Multi_Robot
