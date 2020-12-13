@@ -8,10 +8,22 @@
 - Ruthvik Balakrishna Jois (50314910)
 - Balaji Shubham Kandhi (50314942)
 
-## Project Objective
-The maze runners project consists of 2 robot which passes through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+## Project Description
+The maze runners project consists of 2 robots whose objective is to pass through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+
+## Gazebo World and Multiple Robots in the World
+Our custom world(or maze) is created using the custom_world.world file which is mentioned in our main.launch file which is the main launch file that we use to start the gazebo. In the file there are two supplementary files mentioned robots.launch and one_launch.launch. These two provide necessary arguments to the robot and to our python code. They are basically the hardware of the project. In the code you can edit the initial pose and experiment with various orientation of the robots. Also, using the custom_world_coords.csv file you can edit the Gazebo world as instructed below. Below is the maze that we are using in the project.
+![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
+
+## Voice-to-text speech recognizer 
+The rbx1_speech file conatins a voice_nav_commands.launch file that opens a voice recognizer. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronounciation need to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
+
+## Python Code
+The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below:
+
 
 ---
+## Installation Instructions
 ## Creating the Multi-robot Worlds & giving voice command for Gazebo
 ### Setup the rbx1
 ---
@@ -66,8 +78,6 @@ The maze runners project consists of 2 robot which passes through a maze using t
 ## Creating a Customized Maze
 
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
-
-![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
 
 *NOTE: The files mentioned below are contained in ~/catkin_ws/src/robot_world/launch.*
 
