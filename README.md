@@ -22,6 +22,8 @@ The rbx1_speech file contains a voice_nav_commands.launch file that opens a voic
 ## Python Code
 The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below. It also gives the distance between obstacle and itself. To make it easy for user we have named our two robots sam and max,(Sam is Robot 1 and Max is Robot 2) as the names are easy to pronounce and the robots can easily differentiate between the commands.
 
+![voice commands](https://user-images.githubusercontent.com/70620113/102007570-4e691e80-3cf8-11eb-9bc3-70bc607ad0eb.png)
+
 #### RQT_Graph
 ALso, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project.
 
