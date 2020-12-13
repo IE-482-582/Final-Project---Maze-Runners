@@ -99,8 +99,8 @@ This will create a file named ```custom_world.world.```
 ```
 
 ```
- cd ~/catkin_ws/src/
- catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
+  cd ~/catkin_ws/src/
+  catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
 ```
 
 - Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
@@ -112,8 +112,8 @@ This will create a file named ```custom_world.world.```
 ```
 - Compile/make our package
 ```
- cd ~/catkin_ws
- catkin_make
+  cd ~/catkin_ws
+  catkin_make
 ```
 ---
 ## Running the Voice Recognizer.
@@ -122,8 +122,8 @@ This will create a file named ```custom_world.world.```
 - For launching the speech recognizer, open a new terminal window.
 
 ```
- cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
- roslaunch rbx1_speech voice_nav_commands.launch
+  cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
+  roslaunch rbx1_speech voice_nav_commands.launch
 ```
 *NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone. You need to use USB mic for best results.*
 
@@ -157,45 +157,3 @@ This will create a file named ```custom_world.world.```
 
 
 
-## Organizing your Repository
-For consistency, please use the directory structure described below, where `projectname` should be replaced with the actual catkin_ws name of your project.
-	
-```
-PROPOSAL.md
-README.md
-Images/	
-code/projectname/	
-	scripts/
-	msg/
-	srv/
-	CMakeLists.txt
-	package.xml
-```		
-
-- A sample README file [may be found here](README_template.md)
-- `Images/` is a directory (folder) for storing the graphics for your README.
-- `code/projectname/` is a directory for your ROS code.  Replace `projectname` with the name of your catkin package.
-	- Within this directory you should have `CMakeLists.txt`, `package.xml`, a `scripts/` directory, most likely a `msg/` directory, and possibly a `srv/` directory (if your project uses services).  
-- See `06_Followbot` for an example of the directory structure.
-
-## Project Grading
-
-Grades for the final project will be based on the following percentages and content:
-
-- Proposal (15%)
-- Progress Report (10%)
-- Final Documentation and Code (50%)
-	- Did you address issues from the presentation feedback?
-	- How did you do on the "measures of success"?
-	- Can the instructor successfully install the prereqs?
-	- Can the instructor successfully run the code?  (I highly recommend that you find someone to test this for you)
-	- Does the code do what it's supposed to?
-- Project Demonstration (25%)
-	- Did you prepare/rehearse for this presentation?
-	- Is the README neatly formatted?
-	- Is the README (nearly) complete?
-	- Was the code submitted/organized properly?  Are filenames correct?  Code in the proper directories/subdirectories?
-	- Are the installation instructions complete?
-	- Are the instructions for running the code complete?
-	- Were you able to answer technical questions about your project?
-	- How well were you able to demonstrate the actual implementation?  Note: You have until Monday, Dec. 14 to finalize the project.
