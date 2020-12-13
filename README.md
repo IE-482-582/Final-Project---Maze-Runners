@@ -13,7 +13,6 @@ The maze runners project consists of 2 robots whose objective is to pass through
 - *NOTE (1) - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
 - *NOTE (2) - You need your hardware for this project which is your Microphone Device. USB Mic is highly preferred but wired headphones with AUX jack will give decent results.*
 
----
 ### Practical Applications
  - The project can be used for warehousing in industries where a operator can control multiple robots using voice and ask robots to do activities.
  - If the networking of the project can be done, then by creating Master and Slave nodes multiple players can play a game of Maze Runners. They can control their own robots and see which one reaches the final point first.
