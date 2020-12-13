@@ -16,7 +16,7 @@ Our custom world(or maze) is created using the custom_world.world file which is 
 ![Gazebo_Maze (1)](https://user-images.githubusercontent.com/70620113/102002900-21ecdc80-3ccf-11eb-9e3d-92143b726691.png)
 
 ## Voice-to-text speech recognizer 
-The rbx1_speech file conatins a voice_nav_commands.launch file that opens a voice recognizer. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronounciation need to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
+The rbx1_speech file contains a voice_nav_commands.launch file that opens a voice recognizer. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronunciation need to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary, you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
 
 ## Python Code
 The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below:
