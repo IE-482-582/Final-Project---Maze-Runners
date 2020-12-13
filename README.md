@@ -10,6 +10,7 @@
 
 ## Project Description
 The maze runners project consists of 2 robots whose objective is to pass through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+*NOTE - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
 
 ## Gazebo World and Multiple Robots in the World
 Our custom world(or maze) is created using the custom_world.world file which is mentioned in our main.launch file which is the main launch file that we use to start the gazebo. In the file there are two supplementary files mentioned robots.launch and one_launch.launch. These two provide necessary arguments to the robot and to our python code. They are basically the hardware of the project. In the code you can edit the initial pose and experiment with various orientation of the robots. Also, using the custom_world_coords.csv file you can edit the Gazebo world as instructed below. Below is the maze that we are using in the project.
@@ -19,7 +20,12 @@ Our custom world(or maze) is created using the custom_world.world file which is 
 The rbx1_speech file contains a voice_nav_commands.launch file that opens a voice recognizer. In this recognizer the voice commands are converted into text commands and given to the python code which python code interprets as command or none. The pronunciation need to be specific otherwise the recognizer won't be able to distinguish that world in its library and will give void response. To increase the vocabulary, you need to add your words in a text file and convert that file into .lm and .dic files in (4) link.
 
 ## Python Code
-The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below:
+The logic in the Python code is very basic and easy to understand. It will receive the words that are given by the voice recognizer and process it as the command. This python code then will give instructions to move the robot in Gazebo and also avoid hitting the walls or each other. Also, the specific that are in the python code are attached below. It also gives the distance between obstacle and itself. To make it easy for user we have named our two robots sam and max,(Sam is Robot 1 and Max is Robot 2) as the names are easy to pronounce and the robots can easily differentiate between the commands.
+
+#### RQT_Graph
+ALso, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project.
+
+
 
 
 ---
