@@ -49,20 +49,6 @@ The maze runner project consists of 2 robot which passes through a maze using th
 ---
 ## Setting up the Voice Commands
 
-
-- Open a new terminal window. Grab the current github repo and download it. 
-
-```
-  cd ~/Downloads
-  rm -rf Final-Project---Maze-Runner
-  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
-```
-
-```
-  cd ~/catkin_ws/src/
-  catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
-```
-
 - Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
 
 - Run the installation script. 
@@ -87,7 +73,7 @@ The maze runner project consists of 2 robot which passes through a maze using th
 
 -  Make a backup copy of these files, just in case something goes wrong:
 ```
-  cd ~/catkin_ws/src/multirobot/launch
+  cd ~/catkin_ws/src/rbx1/multirobot/launch
   cp custom_world_coords.xls custom_world_coords_BACKUP.xls
   cp custom_world_coords.csv custom_world_coords_BACKUP.csv
   cp custom_world.world custom_world_BACKUP.world
@@ -105,7 +91,7 @@ The maze runner project consists of 2 robot which passes through a maze using th
 -  Run the python script to generate a .world file:
 - Open a new terminal role.
 ```
-  cd ~/catkin_ws/src/multi_robot/launch
+  cd ~/catkin_ws/src/rbx1/multi_robot/launch
   python create_world.py
 ```
 This will create a file named ```custom_world.world.```
@@ -114,7 +100,7 @@ This will create a file named ```custom_world.world.```
 - Open a terminal window.
 
 ```
-  cd ~/catkin_ws/src/multi_robot/launch
+  cd ~/catkin_ws/src/rbx1/multi_robot/launch
   roslaunch multi_robot main.launch
 ```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
