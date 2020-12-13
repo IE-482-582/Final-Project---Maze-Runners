@@ -2,7 +2,7 @@
 
 # Maze Runners
 ---
-#### Project Names - rbx1
+#### Project Name - rbx1
 ---
 #### Team Members
 - Ruthvik Balakrishna Jois (50314910)
