@@ -16,21 +16,21 @@
 - Grab the current github repo and download it. Open a new terminal window.
 
 ```
- cd ~/Downloads
- rm -rf Final-Project---Maze-Runner
- git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
+  cd ~/Downloads
+  rm -rf Final-Project---Maze-Runner
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
 ```
 
 ```
- cd ~/catkin_ws/src/
- catkin_create_pkg multi_robot rospy geometry_msgs sensor_msgs
+  cd ~/catkin_ws/src/
+  catkin_create_pkg multi_robot rospy geometry_msgs sensor_msgs
 ```
 
 - Copy all the files in multi_robot from Downloads to catkin_ws/src/multi_robot
 
 ```
- cd ~/catkin_ws/
- catkin_make
+  cd ~/catkin_ws/
+  catkin_make
 ```
 ---
 ## Creating a Customized Maze
@@ -44,10 +44,10 @@
 
 -  Make a backup copy of these files, just in case something goes wrong:
 ```
- cd ~/catkin_ws/src/multirobot/launch
- cp custom_world_coords.xls custom_world_coords_BACKUP.xls
- cp custom_world_coords.csv custom_world_coords_BACKUP.csv
- cp custom_world.world custom_world_BACKUP.world
+  cd ~/catkin_ws/src/multirobot/launch
+  cp custom_world_coords.xls custom_world_coords_BACKUP.xls
+  cp custom_world_coords.csv custom_world_coords_BACKUP.csv
+  cp custom_world.world custom_world_BACKUP.world
 ```
 
 -  Edit the ``` custom_world_coords.xls ``` file in Libre Office Calc.
@@ -62,8 +62,8 @@
 -  Run the python script to generate a .world file:
 - Open a new terminal role.
 ```
- cd ~/catkin_ws/src/multi_robot/launch
- python create_world.py
+  cd ~/catkin_ws/src/multi_robot/launch
+  python create_world.py
 ```
 This will create a file named ```custom_world.world.```
 
@@ -71,8 +71,8 @@ This will create a file named ```custom_world.world.```
 - Open a terminal window.
 
 ```
- cd ~/catkin_ws/src/multi_robot/launch
- roslaunch multi_robot main.launch
+  cd ~/catkin_ws/src/multi_robot/launch
+  roslaunch multi_robot main.launch
 ```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
 
@@ -82,8 +82,8 @@ This will create a file named ```custom_world.world.```
 
 - First install pocketsphinx package. Open a new terminal window.
 ```
- sudo apt-get install ros-indigo-pocketsphinx
- sudo apt-get install gstreamer0.10-gconf
+  sudo apt-get install ros-indigo-pocketsphinx
+  sudo apt-get install gstreamer0.10-gconf
 ```
 
 ---
@@ -93,27 +93,27 @@ This will create a file named ```custom_world.world.```
 - Grab the current github repo and download it. Open a new terminal window.
 
 ```
- cd ~/Downloads
- rm -rf Final-Project---Maze-Runner
- git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
+  cd ~/Downloads
+  rm -rf Final-Project---Maze-Runner
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
 ```
 
 ```
-cd ~/catkin_ws/src/
-catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
+ cd ~/catkin_ws/src/
+ catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
 ```
 
 - Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
 
 - Run the installation script. 
 ```
- cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
- chmod +x *.py
+  cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
+  chmod +x *.py
 ```
 - Compile/make our package
 ```
-cd ~/catkin_ws
-catkin_make
+ cd ~/catkin_ws
+ catkin_make
 ```
 ---
 ## Running the Voice Recognizer.
@@ -122,8 +122,8 @@ catkin_make
 - For launching the speech recognizer, open a new terminal window.
 
 ```
-cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
-roslaunch rbx1_speech voice_nav_commands.launch
+ cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
+ roslaunch rbx1_speech voice_nav_commands.launch
 ```
 *NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone. You need to use USB mic for best results.*
 
@@ -133,16 +133,16 @@ roslaunch rbx1_speech voice_nav_commands.launch
 - For launching the voice command, open a 2nd terminal window.
 
 ```
-cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
-rosrun rbx1_speech voice_nav.py
+  cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
+  rosrun rbx1_speech voice_nav.py
 ```
 *NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.*
 
 - Open a Gazebo to check whether your robots are implementing the voice commands are not. For that open a 3rd terminal window.
 
 ```
-cd ~/catkin_ws/src/multi_robot/launch/
-roslaunch multi_robot main.launch
+  cd ~/catkin_ws/src/multi_robot/launch/
+  roslaunch multi_robot main.launch
 
 ```
 *NOTE: We are now using a customized .launch file.*
