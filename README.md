@@ -21,12 +21,12 @@ The maze runner project consists of 2 robot which passes through a maze using th
 ```
   cd ~/Downloads
   rm -rf Final-Project---Maze-Runner
-  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/multi_robot
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
 ```
 
 ```
   cd ~/catkin_ws/src/
-  catkin_create_pkg multi_robot rospy geometry_msgs sensor_msgs
+  catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
 ```
 
 - Copy all the files in multi_robot from Downloads to catkin_ws/src/multi_robot
@@ -35,7 +35,48 @@ The maze runner project consists of 2 robot which passes through a maze using th
   cd ~/catkin_ws/
   catkin_make
 ```
+
 ---
+## Adding Voice commands to the turtlebots by using Pocketsphinx
+
+
+- Open a new terminal window. First install pocketsphinx package. 
+```
+  sudo apt-get install ros-indigo-pocketsphinx
+  sudo apt-get install gstreamer0.10-gconf
+```
+
+---
+## Setting up the Voice Commands
+
+
+- Open a new terminal window. Grab the current github repo and download it. 
+
+```
+  cd ~/Downloads
+  rm -rf Final-Project---Maze-Runner
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
+```
+
+```
+  cd ~/catkin_ws/src/
+  catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
+```
+
+- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
+
+- Run the installation script. 
+```
+  cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
+  chmod +x *.py
+```
+- Compile/make our package
+```
+  cd ~/catkin_ws
+  catkin_make
+```
+---
+
 ## Creating a Customized Maze
 
 - These instructions will explain how to generate a maze composed of numerous unit cubes (1x1x1 meter blocks).
@@ -79,45 +120,7 @@ This will create a file named ```custom_world.world.```
 *NOTE - Crosscheck whether in main.launch file cutom_world.world is there*
 
 ---
-## Adding Voice commands to the turtlebots by using Pocketsphinx
 
-
-- Open a new terminal window. First install pocketsphinx package. 
-```
-  sudo apt-get install ros-indigo-pocketsphinx
-  sudo apt-get install gstreamer0.10-gconf
-```
-
----
-## Setting up the Voice Commands
-
-
-- Open a new terminal window. Grab the current github repo and download it. 
-
-```
-  cd ~/Downloads
-  rm -rf Final-Project---Maze-Runner
-  git clone https://github.com/IE-482-582/Final-Project---Maze-Runner/rbx1
-```
-
-```
-  cd ~/catkin_ws/src/
-  catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
-```
-
-- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
-
-- Run the installation script. 
-```
-  cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
-  chmod +x *.py
-```
-- Compile/make our package
-```
-  cd ~/catkin_ws
-  catkin_make
-```
----
 ## Running the Voice Recognizer.
 
 
