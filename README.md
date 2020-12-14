@@ -65,26 +65,30 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ```
   cd ~/catkin_ws/src/rbx1
   catkin_create_pkg rbx1_speech rospy geometry_msgs sensor_msgs
+  mkdir config
+  mkdir launch
+  mkdir nodes
 ```
 
 ```
 cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/rbx1_speech
 cp package.xml ~/catkin_ws/src/rbx1/rbx1_speech
 cp CMakeLists.txt ~/catkin_ws/src/rbx1/rbx1_speech
-cp config/* ~/catkin_ws/src/rbx1/rbx1_speech
-cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech
-cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech
+cp config/* ~/catkin_ws/src/rbx1/rbx1_speech/config
+cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech/launch
+cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech/nodes
 ```
 ```
   cd ~/catkin_ws/src/rbx1
   catkin_create_pkg robot_world rospy geometry_msgs sensor_msgs
+  mkdir launch
 ```
 
 ```
 cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/robot_world
 cp package.xml ~/catkin_ws/src/rbx1/robot_world
 cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world
-cp launch/* ~/catkin_ws/src/rbx1/robot_world
+cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch
 ```
 
 - Copy all the files in rbx1/rbx1_speech and rbx1/robot_world from Downloads to catkin_ws/src/rbx1/rbx1_speech and catkin_ws/src/rbx1/robot_world
@@ -188,7 +192,7 @@ This will create a file named ```custom_world.world.```
 ---
 ## Running the Voice Command.
 
-- Open a 2nd terminal window for launching the voice command. We have to launch voice_nav.py
+- Open a 3rd terminal window for launching the voice command. We have to launch voice_nav.py
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
