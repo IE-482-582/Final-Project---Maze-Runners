@@ -62,11 +62,11 @@ class VoiceNav():
                                     'robo one slower': ['sam slow down', 'sam slower', 'sam slow'],
                                     'robo one faster': ['sam speed up', 'sam faster'],
                                     'robo one forward': ['sam forward', 'sam ahead', 'sam straight', 'forward', 'one'],
-                                    'robo one backward': ['sam back', 'sam backward', 'sam back up', 'backward'],
+                                    'robo one backward': ['sam back', 'sam backward', 'sam back up'],
                                     #'robo one rotate left': ['sam rotate left'],
                                     #'robo one rotate right': ['sam rotate right'],
-                                    'robo one turn left': ['sam turn left', 'sam left', 'left'],
-                                    'robo one turn right': ['sam turn right', 'sam right', 'right']}
+                                    'robo one turn left': ['sam turn left', 'sam left'],
+                                    'robo one turn right': ['sam turn right', 'sam right']}
                                                                         		                               
 		# Robot 2 commands
         # A mapping from keywords or phrases to commands
@@ -74,11 +74,11 @@ class VoiceNav():
                                     'robo two slower': ['max slow down', 'max slower', 'max slow'],
                                     'robo two faster': ['max speed up', 'max faster'],
                                     'robo two forward': ['max forward', 'max ahead', 'max straight', 'straight', 'two'],
-                                    'robo two backward': ['max back', 'max backward', 'max back up', 'behind'],
+                                    'robo two backward': ['max back', 'max backward', 'max back up'],
                                     #'robo one rotate left': ['max rotate left', 'max left'],
                                     #'robo one rotate right': ['max rotate right', 'max right'],
-                                    'robo two turn left': ['max turn left', 'max left', 'l'],
-                                    'robo two turn right': ['max turn right', 'max right', 'r'],
+                                    'robo two turn left': ['max turn left', 'max left'],
+                                    'robo two turn right': ['max turn right', 'max right'],
                                     'pause': ['pause speech'],
                                     'continue': ['continue speech']}
         
