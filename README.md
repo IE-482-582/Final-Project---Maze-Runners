@@ -233,7 +233,7 @@ rosrun rqt_graph rqt_graph
 3. https://duluthrobot.wordpress.com/2016/03/18/adding-voice-commands-using-pocketsphinx-to-the-turtlebot2/ :For giving the voice commands to robots
 4. http://www.speech.cs.cmu.edu/tools/lmtool-new.html : For making our own library of commands
 5. https://www.theconstructsim.com/exploring-ros-2-wheeled-robot-part-5/ : For giving the collision avoidance and obstacle detection.
----
+
 
 
 
