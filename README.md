@@ -84,7 +84,7 @@ cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech
 cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/robot_world
 cp package.xml ~/catkin_ws/src/rbx1/robot_world
 cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world
-cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech
+cp launch/* ~/catkin_ws/src/rbx1/robot_world
 ```
 
 - Copy all the files in rbx1/rbx1_speech and rbx1/robot_world from Downloads to catkin_ws/src/rbx1/rbx1_speech and catkin_ws/src/rbx1/robot_world
