@@ -72,7 +72,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ```
 
 ```
-cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/rbx1_speech
+cd ~/Downloads/Final-Project---Maze-Runners/rbx1/rbx1_speech
 cp package.xml ~/catkin_ws/src/rbx1/rbx1_speech/
 cp CMakeLists.txt ~/catkin_ws/src/rbx1/rbx1_speech/
 cp config/* ~/catkin_ws/src/rbx1/rbx1_speech/config/
@@ -87,7 +87,7 @@ cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 ```
 
 ```
-cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/robot_world
+cd ~/Downloads/Final-Project---Maze-Runners/rbx1/robot_world
 cp package.xml ~/catkin_ws/src/rbx1/robot_world/
 cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world/
 cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch/
