@@ -93,8 +93,6 @@ cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world/
 cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch/
 ```
 
-- Copy all the files in rbx1/rbx1_speech and rbx1/robot_world from Downloads to catkin_ws/src/rbx1/rbx1_speech and catkin_ws/src/rbx1/robot_world
-
 ---
 ## Adding Voice commands to the Turtlebots by using Pocketsphinx
 
@@ -119,15 +117,12 @@ cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch/
   ls
 ```
 *NOTE - Check all the .py have turned colored.*
+
 - Compile/make our package
 ```
   cd ~/catkin_ws
   catkin_make
-```
-
-```
-cd ~/catkin_ws/devel/
-source setup.bash
+  source devel/setup.bash
 ```
 
 ---
