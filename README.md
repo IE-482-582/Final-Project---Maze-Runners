@@ -65,6 +65,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ```
   cd ~/catkin_ws/src/rbx1
   catkin_create_pkg rbx1_speech rospy geometry_msgs sensor_msgs
+  cd ~/catkin_ws/src/rbx1/rbx1_speech/
   mkdir config
   mkdir launch
   mkdir nodes
@@ -72,23 +73,24 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 
 ```
 cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/rbx1_speech
-cp package.xml ~/catkin_ws/src/rbx1/rbx1_speech
-cp CMakeLists.txt ~/catkin_ws/src/rbx1/rbx1_speech
-cp config/* ~/catkin_ws/src/rbx1/rbx1_speech/config
-cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech/launch
-cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech/nodes
+cp package.xml ~/catkin_ws/src/rbx1/rbx1_speech/
+cp CMakeLists.txt ~/catkin_ws/src/rbx1/rbx1_speech/
+cp config/* ~/catkin_ws/src/rbx1/rbx1_speech/config/
+cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech/launch/
+cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 ```
 ```
   cd ~/catkin_ws/src/rbx1
   catkin_create_pkg robot_world rospy geometry_msgs sensor_msgs
+  cd ~/catkin_ws/src/rbx1/robot_world/
   mkdir launch
 ```
 
 ```
 cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/robot_world
-cp package.xml ~/catkin_ws/src/rbx1/robot_world
-cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world
-cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch
+cp package.xml ~/catkin_ws/src/rbx1/robot_world/
+cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world/
+cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch/
 ```
 
 - Copy all the files in rbx1/rbx1_speech and rbx1/robot_world from Downloads to catkin_ws/src/rbx1/rbx1_speech and catkin_ws/src/rbx1/robot_world
