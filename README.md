@@ -64,7 +64,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 
 ```
   cd ~/catkin_ws/src/rbx1
-  catkin_create_pkg rbx1_speech rospy geometry_msgs sensor_msgs
+  mkdir rbx1_speech 
   cd ~/catkin_ws/src/rbx1/rbx1_speech/
   mkdir config
   mkdir launch
@@ -81,7 +81,7 @@ cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
 ```
 ```
   cd ~/catkin_ws/src/rbx1
-  catkin_create_pkg robot_world rospy geometry_msgs sensor_msgs
+  mkdir robot_world 
   cd ~/catkin_ws/src/rbx1/robot_world/
   mkdir launch
 ```
@@ -173,7 +173,7 @@ This will create a file named ```custom_world.world.```
 
 ```
   cd ~/catkin_ws/src/rbx1/robot_world/launch
-  roslaunch robot_world main.launch
+  roslaunch rbx1 main.launch
 ```
 - *NOTE (1) - Crosscheck whether in main.launch file custom_world.world is properly mentioned there or not.*
 - *NOTE (2) - We are now using a customized .launch file.*
@@ -187,7 +187,7 @@ This will create a file named ```custom_world.world.```
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
-  roslaunch rbx1_speech voice_nav_commands.launch
+  roslaunch rbx1 voice_nav_commands.launch
 ```
 *NOTE- This will launch the speech recognizer where you could test the vocabulary and your system's microphone. You need to use USB mic for best results.*
 
@@ -198,7 +198,7 @@ This will create a file named ```custom_world.world.```
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
-  rosrun rbx1_speech voice_nav.py
+  rosrun rbx1 voice_nav.py
 ```
 *NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.*
 
