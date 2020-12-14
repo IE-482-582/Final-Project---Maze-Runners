@@ -9,7 +9,7 @@
 - Balaji Shubham Kandhi (50314942)
 
 ## Project Description
-The maze runners project consists of 2 robots whose objective is to pass through a maze using the voice commands. The robots are fully voice controlled and has to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
+The maze runners project consists of 2 robots whose objective is to pass through a maze using voice commands. The robots are fully voice-controlled and have to pass through the obstacle course without hitting each other or with the walls. In other words, it also contains collision avoidance. The robots are controlled by a single operator who will command the robots by name and the robots will move simultaneously on his/her command.
 - *NOTE (1) - The commands will be quite rudimentary like forward, backward, left, right and stop. There are no hard and fast course instructions for the maze, just try to avoid the barriers and reach the target point as quickly as possible.*
 - *NOTE (2) - You need your hardware for this project which is your Microphone Device. USB Mic is highly preferred but wired headphones with AUX jack will give decent results. Wireless Headphones or using System Mic are not preferred.*
 
