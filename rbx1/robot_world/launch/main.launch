@@ -3,11 +3,11 @@
 
   <!-- start world -->
   <node name="gazebo" pkg="gazebo_ros" type="gazebo" 
-   args="$(find robot_world)/launch/custom_world.world" respawn="false" output="screen" />
+   args="$(find rbx1)/robot_world/launch/custom_world.world" respawn="false" output="screen" />
 
   <!-- start gui -->
   <!-- <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/> -->
 
   <!-- include our robots -->
-  <include file="$(find robot_world)/launch/robots.launch"/>
+  <include file="$(find rbx1)/robot_world/launch/robots.launch"/>
 </launch>
