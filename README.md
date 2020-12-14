@@ -36,7 +36,7 @@ The logic in the Python code is very basic and easy to understand. It will recei
 
  ![voice commands](https://user-images.githubusercontent.com/70620113/102007570-4e691e80-3cf8-11eb-9bc3-70bc607ad0eb.png)
 
-#### RQT_Graph
+### RQT_Graph
 Also, below is the rqt_graph that will help you understand various topics, nodes and messages in the system. It shows the mechanism of our project. You can verify the project by comparing the your rqt_graph with this. It should be same.
 
  ![rqt_graph](https://user-images.githubusercontent.com/70620113/102007535-eca8b480-3cf7-11eb-8e74-2b75c8509b69.png)
