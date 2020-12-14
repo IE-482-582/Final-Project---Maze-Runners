@@ -76,6 +76,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ```
   sudo apt-get install ros-indigo-pocketsphinx
   sudo apt-get install gstreamer0.10-gconf
+  sudo apt-get update
 ```
 *NOTE - This will install the recognizer.py file which is vital for this project. This file distinguishes between words and noise.* 
 
@@ -87,8 +88,11 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 - Run the installation script. 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
+  ls
   chmod +x *.py
+  ls
 ```
+*NOTE - Check all the .py have turned colored.*
 - Compile/make our package
 ```
   cd ~/catkin_ws
@@ -129,6 +133,7 @@ source setup.bash
 - Open a new terminal role.
 ```
   cd ~/catkin_ws/src/rbx1/robot_world/launch
+  chmod +x *.py
   python create_world.py
 ```
 This will create a file named ```custom_world.world.```
