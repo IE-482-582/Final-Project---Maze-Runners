@@ -55,18 +55,39 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
   rm -rf Final-Project---Maze-Runners
   git clone https://github.com/IE-482-582/Final-Project---Maze-Runners
 ```
+- Create different packages and Copy all the finals from Downloads to specific folder using the commands below
 
 ```
   cd ~/catkin_ws/src/
   catkin_create_pkg rbx1 rospy geometry_msgs sensor_msgs
 ```
 
-- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1
+```
+  cd ~/catkin_ws/src/rbx1
+  catkin_create_pkg rbx1_speech rospy geometry_msgs sensor_msgs
+```
 
 ```
-  cd ~/catkin_ws/
-  catkin_make
+cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/rbx1_speech
+cp package.xml ~/catkin_ws/src/rbx1/rbx1_speech
+cp CMakeLists.txt ~/catkin_ws/src/rbx1/rbx1_speech
+cp config/* ~/catkin_ws/src/rbx1/rbx1_speech
+cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech
+cp nodes/* ~/catkin_ws/src/rbx1/rbx1_speech
 ```
+```
+  cd ~/catkin_ws/src/rbx1
+  catkin_create_pkg robot_world rospy geometry_msgs sensor_msgs
+```
+
+```
+cd ~/Downloads/Final-Project---Maze-Runners-master/rbx1/robot_world
+cp package.xml ~/catkin_ws/src/rbx1/robot_world
+cp CMakeLists.txt ~/catkin_ws/src/rbx1/robot_world
+cp launch/* ~/catkin_ws/src/rbx1/rbx1_speech
+```
+
+- Copy all the files in rbx1/rbx1_speech and rbx1/robot_world from Downloads to catkin_ws/src/rbx1/rbx1_speech and catkin_ws/src/rbx1/robot_world
 
 ---
 ## Adding Voice commands to the Turtlebots by using Pocketsphinx
@@ -83,7 +104,6 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ---
 ## Setting up the Voice Commands
 
-- Copy all the files in rbx1 from Downloads to catkin_ws/src/rbx1/
 
 - Run the installation script. 
 ```
@@ -129,30 +149,35 @@ source setup.bash
 	- Name the file ```custom_world_coords.csv```
 	- Save
 	
--  Run the python script to generate a .world file:
-- Open a new terminal role.
+- Run the python script to generate a .world file:
+- Open a new terminal role. Check whether the code has turned colored or not using ls command.
 ```
   cd ~/catkin_ws/src/rbx1/robot_world/launch
+  ls
   chmod +x *.py
+  ls
   python create_world.py
+  
 ```
 This will create a file named ```custom_world.world.```
 
 #### Test out your new world:
-- Open a terminal window.
+
+- Open a terminal window. We have to launch the main.launch which the principle launch file of the Gazebo World.
 
 ```
   cd ~/catkin_ws/src/rbx1/robot_world/launch
   roslaunch robot_world main.launch
 ```
-*NOTE - Crosscheck whether in main.launch file custom_world.world is properly mentioned there or not.*
+- *NOTE (1) - Crosscheck whether in main.launch file custom_world.world is properly mentioned there or not.*
+- *NOTE (2) - We are now using a customized .launch file.*
 
 ---
 
 ## Running the Voice Recognizer.
 
 
-- Open a new terminal window. For launching the speech recognizer.
+- Open a 2nd terminal window for launching the speech recognizer. We have to launch the voice_nav_commands.launch
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/launch/
@@ -163,7 +188,7 @@ This will create a file named ```custom_world.world.```
 ---
 ## Running the Voice Command.
 
-- Open a 2nd terminal window. For launching the voice command.
+- Open a 2nd terminal window for launching the voice command. We have to launch voice_nav.py
 
 ```
   cd ~/catkin_ws/src/rbx1/rbx1_speech/nodes/
@@ -171,14 +196,7 @@ This will create a file named ```custom_world.world.```
 ```
 *NOTE -  To add vocabulary, edit the .txt file and upload it on the (4) link given in the reference. This will create the .lm, .dic. Copy those to **catkin_ws/src/rbx1/rbx1_speech/config/** and save it.*
 
-- Open a 3rd terminal window. Open a Gazebo to check whether your robots are implementing the voice commands are not. 
-
-```
-  cd ~/catkin_ws/src/rbx1/robot_world/launch/
-  roslaunch robot_world main.launch
-
-```
-*NOTE: We are now using a customized .launch file.*
+- Check in Gazebo whether your robots are implementing the voice commands are not that you have previously opened to check your world.
 
 ---
 ## Running a rqt_graph
