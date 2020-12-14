@@ -51,7 +51,7 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
 ```
   cd ~/Downloads
   rm -rf Final-Project---Maze-Runners
-  git clone https://github.com/IE-482-582/Final-Project---Maze-Runners/rbx1
+  git clone https://github.com/IE-482-582/Final-Project---Maze-Runners
 ```
 
 ```
@@ -92,6 +92,12 @@ Also, below is the rqt_graph that will help you understand various topics, nodes
   cd ~/catkin_ws
   catkin_make
 ```
+
+```
+cd ~/catkin_ws/devel/
+source setup.bash
+```
+
 ---
 
 ## Creating a Customized Maze
