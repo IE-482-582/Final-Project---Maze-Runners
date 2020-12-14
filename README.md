@@ -2,7 +2,7 @@
 
 # Maze Runners
 ---
-#### Project Name - rbx1
+### Project Name - rbx1
 ---
 #### Youtube Link - https://youtu.be/5polu1qwBvI
 ---
@@ -162,7 +162,8 @@ cp launch/* ~/catkin_ws/src/rbx1/robot_world/launch/
 ```
 This will create a file named ```custom_world.world.```
 
-#### Test out your new world:
+---
+## Testing your new world out.
 
 - Open a terminal window. We have to launch the main.launch which the principle launch file of the Gazebo World.
 
